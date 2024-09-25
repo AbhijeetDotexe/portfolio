@@ -1,15 +1,18 @@
 import React from "react";
 import "../App.css";
 
-function Navbar() {
+function Navbar({ onClose }) {
   return (
-    <div>
+    <div className="menu">
       <ul className="list-unstyled">
         <li>Home</li>
-        <li>about</li>
-        <li>contact us</li>
-        <li>skills</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Skills</li>
       </ul>
+      <button className="close-btn" onClick={onClose}>
+        Close
+      </button>
     </div>
   );
 }

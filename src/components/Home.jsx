@@ -5,7 +5,9 @@ function Home({ onClick }) {
   return (
     <div>
       <p className="heading">Full Screen Navigation Menu</p>
-      <button onClick={onClick}>Click</button>
+      <button className="animate" onClick={onClick}>
+        Menu
+      </button>
     </div>
   );
 }
